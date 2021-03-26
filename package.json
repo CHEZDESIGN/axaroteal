@@ -1,0 +1,24 @@
+{
+  "name": "newsmed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^3.1.3",
+    "autoprefixer": "^10.1.0",
+    "postcss-cli": "^8.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/jit": "^0.1.5",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.4"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production postcss assets/css/tailwind.css -o build/tailwind.css",
+    "dev": "npx tailwindcss-cli@latest build assets/css/tailwind.css -o build/tailwind.css",
+    "watch": "postcss -w assets/css/tailwind.css -o build/tailwind.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
