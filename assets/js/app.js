@@ -10,11 +10,11 @@ function runOnScroll() {
 
   if (document.documentElement.scrollTop >= 100) {
     logo.classList.add('logoScroll');
-    navbar.classList.add('shadow-lg');
+    navbar.classList.add('axa-shadow');
   } else {
     logo.classList.remove('logoScroll');
-    navbar.classList.remove('shadow-lg');
+    navbar.classList.remove('axa-shadow');
   }
-  
+  console.log(header)
 };
 window.addEventListener("scroll", runOnScroll);
